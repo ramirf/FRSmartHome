@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Capstone 1</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <style>
+
+    /*============================ Links Transform ==============*/
+
+    html {
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+
+    body {
+      font: 18px "Montserrat", sans-serif;
+      line-height: 1.8;
+      color: grey;
+    }
+
+    a {
+      color: #1abc9c;
+      display: inline-block;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #148f77;
+      text-decoration: none;
+      transform: translate(0, -2px);
+    }
+
+    a.top {
+      display: block;
+      padding: 10px;
+    }
+
+    a.top:hover {
+      letter-spacing: 2px;
+      transform: translate(0, -20px);
+    }
+
+    .navbar {
+             font-family: Montserrat, sans-serif;
+             margin-bottom: 0;
+             border: 0;
+             font-size: 11px !important;
+             letter-spacing: 4px;
+             opacity: 0.9;
+        }
+
+    .navbar li a, .navbar .navbar-brand { 
+        color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+
+    .container-fluid{
+        margin-left:0;
+        margin-right:0;
+        margin-top:5vh;
+        padding:0;
+    }
+
+    .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+    .dropdown-menu li a {
+        color: gray !important;
+    }
+    .dropdown-menu li a:hover {
+        background-color: #f4d942 !important;
+    }
+
+    .carousel-inner > .item > img {
+      width:100%;
+      height:95vh;
+    }
+
+    .btn{
+        padding:1em;
+    }
+
+    .aboutus{
+        background-image:url(pexels-photo-276534.jpg);
+        text-align:justify;
+        text-indent: 2em;
+
+    }
+
+    #faqs{
+        background-image:url(pexels-photo-220749.jpg);
+        height:500px;
+        text-align:justify;
+    }
+   
+
+
+
+
+   footer {
+      padding-bottom: 20px !important;
+      background: white;
+    }
+
+    @media all and (max-width:1200px) {
+        body{
+            font-size:150%;
+        }
+    }
+     @media all and (max-width:1000px) {
+        body{
+            font-size:120%;
+        }
+    }
+     @media all and (max-width:500px) {
+        body{
+            font-size:100%;
+        }
+    }
+
+
+    </style>
+</head>
+
+<body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="50">
+   
+
+	 <!--===========================NAVBAR TOP FIXED START===============================================-->
+   
+  <div id="#wrapper" class="">
+    <!-- navbar -->
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navi">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">FR Smart Home</a>
+            </div>
+        
+
+            <div class="collapse navbar-collapse" id="navi">
+
+                <ul class="nav navbar-nav" style="float:right">
+                
+                    
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Items for Sale
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="Capstone1.2.html#featured">Featured</a></li>
+                        <li><a href="Capstone1.2.html#furniture">Furniture</a></li>
+                        <li><a href="Capstone1.2.html#electronics">Electronics</a></li> 
+                      </ul>
+                    </li>
+                </ul>
+   
+            </div>
+
+        </div>
+    </nav> 
+     <!--===========================NAVBAR TOP FIXED END===============================================-->
+     
+    
+        <div class="container-fluid" id="home">
+
+        
+
+            
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="pexels-photo-189333.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                          <h3>Lorem Ipsum</h3>
+                          <p>Lorem Ipsum Lorem Ipsum ipsum lorem ipsum lorem.</p>
+                        </div>      
+                      </div>
+
+                      <div class="item">
+                        <img src="pexels-photo-275484.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                          <h3>Lorem Ipsum</h3>
+                          <p>Lorem Ipsum Lorem Ipsum ipsum lorem ipsum lorem.</p>
+                        </div>      
+                      </div>
+                    
+                      <div class="item">
+                        <img src="pexels-photo-172074.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                          <h3>FREE DELIVERY within METRO MANILA!</h3>
+                          <p>Click <a href="#contactus">HERE</a> to contact us right now. Lorem Ipsum Lorem Ipsum ipsum lorem ipsum lorem.</p>
+                        </div>     
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+        </div>    
+
+    <!-- about -->
+      <section id="about" style="height:500px" class="aboutus">
+        <div class="container">
+
+          <div>
+            <h1 class="page-header">About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum, enim at varius maximus, augue quam ullamcorper tortor, vel consequat</p>
+            <h3>Lorem lorem!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum, enim at varius maximus, augue quam ullamcorper tortor, vel consequat nibh massa eu enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+              Curae; Integer molestie in massa in vehicula. Nullam id risus a velit vulputate egestas vitae interdum massa. Duis id facilisis nibh. Praesent ac sem in est blandit tincidunt. Morbi finibus, turpis dignissim accumsan dictum, est nunc interdum
+              augue, id ultricies velit sem sed metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sagittis lectus in dolor efficitur tincidunt. Etiam ullamcorper vestibulum rhoncus.</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- FAQs -->
+
+      <section id="faqs" style="height:500px">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <p><strong>Note:</strong> All orders after 10pm to 6am are considered for the next day.</p>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Question one lorem ipsum dolor?</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Second question lorem sit amet?</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Third question ut enim ad minim veniam?</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Question four question ut enim ad minim veniam?</a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Fifth question ut enim ad minim veniam?</a>
+                </h4>
+              </div>
+              <div id="collapse5" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+          </div> 
+          </div> 
+          
+        
+      </section>
+
+      
+     <!-- contact -->
+      <section id="contactus" class="contactus">
+        <div class="container">
+          <h1 class="page-header">Contact Us</h1>
+          <h3>Order Now!</h3>
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Contact us and we'll get back to you within a day.</p>
+              <p><i class="glyphicon glyphicon-map-marker"></i> #143 Ipsum Street Quezon City, Philippines</p>
+              <p><i class="glyphicon glyphicon-phone"></i> +639177777777</p>
+              <p><i class="glyphicon glyphicon-envelope"></i> email@domain.com</p>
+            </div>
+            <div class="col-sm-7">
+              <form role="form" id="contact-form">
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                </div>
+                <button id="form-submit" class="btn btn-success btn-md pull-right" type="submit">Send</button>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+            
+      <footer class="container-fluid">
+        <a class="top" href="#home" title="Back to top">
+          <p><i class="glyphicon glyphicon-chevron-up"></i>
+            <br>Back to top</p>
+        </a>
+        <small>&copy; Ramir Fortunato / Capstone 1</small>
+      </footer>
+        
+
+    </div> <!-- wrapper -->
+
+
+</body>
+</html>
